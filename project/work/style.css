@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('//db.onlinewebfonts.com/c/f7afe66fe9d022d7dc7fd57e4adc078f?family=GT+Walsheim+Pro+Bold');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "GT Walsheim Pro Bold";;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+div {
+    display: block;
+}
+.flex-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper {
+    width: 100%;
+}
+.header-menu {
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+}
+.body {
+    width: 90%;
+    margin: auto;
+}
+.header-menu-flex {
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    width: 2%;
+}
+.header-logo img {
+    width: 100%;
+}
+.header-menu-item {
+    width: 12%;
+}
+.header-menu-item ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu-item li {
+    width: 30%;
+}
+.red {
+    color: rgb(251, 52, 84);
+}
+.blue {
+    color: rgb(48, 212, 255);
+}
+.yellow {
+    color: rgb(255, 209, 36);
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .header-menu-item {
+        width: 30%;
+    }
+    .header-logo {
+        width: 4%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .header-menu-item {
+        width: 40%;
+    }
+    .header-logo {
+        width: 4%;
+    }
+}
+/* body */
+.title {
+    padding: 50px 0;
+}
+.title h2 {
+    font-size: 6rem;
+    color: #30d4ff;
+}
+.gif-flex {
+    justify-content: space-between;
+}
+.gif-items {
+    width: 49%;
+    margin-top: 30px;
+}
+.gif-items img {
+    width: 100%;
+    height: 100%;
+}
+.box {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.overlay1 {
+    background-color: #30d4ff;
+}
+.overlay2 {
+    background-color: #ffd124;
+}
+.overlay3 {
+    background-color: #fb3454;
+}
+.overlay h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: white;
+}
+@media only screen and (max-width:768px) {
+    .title h2 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:768px) {
+    .gif-items {
+        width: 100%;
+    }
+}
+/* bot */
+.bottom {
+    padding: 50px 0;
+    text-align: center;
+}
+.info {
+    width: 50%;
+    margin:50px auto;
+}
+.info-item {
+    width: calc(100%/3);
+    color: #b5b5b5;
+}
+.info-item a {
+    color: #b5b5b5;
+}
+.info-detail {
+    width: 100%;
+    justify-content: center;
+}
+.info-detail img {
+    width: 7%;
+    margin: 2px 10px;
+}
+@media only screen and (max-width:768px) {
+    .bottom-button .btn-box a:first-child {
+        display: none;
+    }
+    .contact {
+        width: 40%;
+    }
+    .info-item {
+        width: 100%;
+        padding: 20px;
+    }
+    .info {
+        width: 100%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .info-item {
+        width: calc(100%/3);
+    }
+    .info{
+        width: 100%;
+    }
+}
